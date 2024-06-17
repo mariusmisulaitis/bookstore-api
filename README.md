@@ -1,8 +1,15 @@
+
 # Bookstore Management System
 
 This project is a Java Spring REST API for managing bookstores, books, and sales. It consists of three main entities: Book, Bookstore, and Sale.
 This bookstore management system ensures that it will be possible to track what books are available in certain bookstores and what books are for sale. 
 This system will allow managers to perform various analyses, such as which books sell best, which bookstores have the highest sales, etc.
+
+## Database schema
+
+
+![ image](https://github.com/mariusmisulaitis/bookstore-api/assets/131879120/51e18a57-e6d9-4bb1-8297-95c404b17820)
+
 
 ## Features
 
@@ -51,6 +58,9 @@ This system will allow managers to perform various analyses, such as which books
 
     The application will be running at `http://localhost:8080`. You can access the API documentation (e.g., Swagger) at `http://localhost:8080/swagger-ui/index.html#/`.
 
+
+
+
 ## API Endpoints
 
 ### Book Endpoints
@@ -81,10 +91,42 @@ This system will allow managers to perform various analyses, such as which books
 - `PUT /sales/{saleId}` - Update a sale's details
 - `DELETE /sales/{saleId}` - Delete a sale by ID
 
+
+## Endpoint protection based on roles:
+
+### BookController:
+
+- `POST /books` - Only ADMIN and MANAGER.
+- `GET /books` - All (USER, ADMIN, MANAGER).
+- `GET /books/{bookId}` - All (USER, ADMIN, MANAGER).
+- `PUT /books/{bookId}` - Only ADMIN and MANAGER.
+- `DELETE /books/{bookId}` - Only ADMIN and MANAGER.
+
+### BookstoreController:
+
+- `POST /bookstores` - Only ADMIN and MANAGER.
+- `GET /bookstores` - All (USER, ADMIN, MANAGER).
+- `GET /bookstores/{bookstoreId}` - All (USER, ADMIN, MANAGER).
+- `PATCH /bookstores/{bookstoreId}/title` - Only ADMIN and MANAGER.
+- `PUT /bookstores/{bookstoreId}` - Only ADMIN and MANAGER.
+- `DELETE /bookstores/{bookstoreId}` - Only ADMIN and MANAGER.
+- `GET /bookstores/{bookstoreId}/books` - All (USER, ADMIN, MANAGER).
+- `POST /bookstores/{bookstoreId}/books` - Only ADMIN and MANAGER.
+- `GET /bookstores/{bookstoreId}/books/{bookId}` - All (USER, ADMIN, MANAGER).
+- `DELETE /bookstores/{bookstoreId}/books/{bookId}` - Only ADMIN ir MANAGER.
+
+### SaleController:
+
+- `POST /sales` - Only ADMIN and MANAGER.
+- `GET /sales` - All (USER, ADMIN, MANAGER).
+- `GET /sales/{saleId}` - All (USER, ADMIN, MANAGER).
+- `PUT /sales/{saleId}` - Only ADMIN and MANAGER.
+- `DELETE /sales/{saleId}` - Only ADMIN and MANAGER.
+
+
 ## Example Request
 
 ### Add a new Book
-
 
 ```bash
 curl -X POST "http://localhost:8080/books" -H "Content-Type: application/json" -d '{
@@ -94,53 +136,13 @@ curl -X POST "http://localhost:8080/books" -H "Content-Type: application/json" -
   "price": 29.99,
   "bookstoreId": 1
 }'
+```
 
 
+## Error Handling
 
-Error Handling
 The application handles errors gracefully and returns appropriate HTTP status codes and error messages for various error scenarios, including validation errors and not found errors.
 
 
-
-Endpoint protection based on roles:
-
-BookController:
-POST /books - Only ADMIN and MANAGER.
-GET /books - All (USER, ADMIN, MANAGER).
-GET /books/{bookId} - All (USER, ADMIN, MANAGER).
-PUT /books/{bookId} - Only ADMIN and MANAGER.
-DELETE /books/{bookId} - Only ADMIN and MANAGER.
-
-BookstoreController:
-POST /bookstores - Only ADMIN and MANAGER.
-GET /bookstores - All (USER, ADMIN, MANAGER).
-GET /bookstores/{bookstoreId} - All (USER, ADMIN, MANAGER).
-PATCH /bookstores/{bookstoreId}/title - Only ADMIN and MANAGER.
-PUT /bookstores/{bookstoreId} - Only ADMIN and MANAGER.
-DELETE /bookstores/{bookstoreId} - Only ADMIN and MANAGER.
-GET /bookstores/{bookstoreId}/books - All (USER, ADMIN, MANAGER).
-POST /bookstores/{bookstoreId}/books - Only ADMIN and MANAGER.
-GET /bookstores/{bookstoreId}/books/{bookId} - All (USER, ADMIN, MANAGER).
-DELETE /bookstores/{bookstoreId}/books/{bookId} - Only ADMIN ir MANAGER.
-
-SaleController:
-POST /sales - Only ADMIN and MANAGER.
-GET /sales - All (USER, ADMIN, MANAGER).
-GET /sales/{saleId} - All (USER, ADMIN, MANAGER).
-PUT /sales/{saleId} - Only ADMIN and MANAGER.
-DELETE /sales/{saleId} - Only ADMIN and MANAGER.
-
-
-
-Contributing
-Fork the repository
-Create a new branch (git checkout -b feature-branch)
-Make your changes
-Commit your changes (git commit -m 'Add some feature')
-Push to the branch (git push origin feature-branch)
-Open a Pull Request
-
-
-
-Contact
-If you have any questions or suggestions, feel free to reach out to us at [marius.misulaitis7@gmail.com].
+## Contact
+If you have any questions or suggestions, feel free to reach out to me at [marius.misulaitis7@gmail.com].
