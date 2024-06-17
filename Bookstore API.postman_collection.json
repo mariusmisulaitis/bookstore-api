@@ -1,0 +1,2941 @@
+{
+	"info": {
+		"_postman_id": "3d3f5b29-d3b7-4486-8319-7bb3ef6c29bd",
+		"name": "Bookstore API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34352414"
+	},
+	"item": [
+		{
+			"name": "Bookstore",
+			"item": [
+				{
+					"name": "all bookstores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all bookstores returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/bookstores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:13:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Kaunas Bookstore\",\n        \"address\": \"Laisvės al. 5, Kaunas\",\n        \"phone\": \"+37061123456\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"nuajas knygynas\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Klaipeda Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Klaipeda Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Klaipeda Bookstore TEST\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Klaipeda Bookstore TEST\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Utena Bookstore\",\n        \"address\": \"Utenos g. 5, Utena\",\n        \"phone\": \"+37061123456\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Utena Bookstore\",\n        \"address\": \"Utenos g. 5, Utena\",\n        \"phone\": \"+37061123456\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Utena Bookstore\",\n        \"address\": \"Utenos g. 5, Utena\",\n        \"phone\": \"+37061123456\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Utena Bookstore\",\n        \"address\": \"Utenos g. 5, Utena\",\n        \"phone\": \"+37061123456\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Vilnius Bookstore\",\n        \"address\": \"Gedimino pr. 9, Vilnius\",\n        \"phone\": \"+37061234567\"\n    }\n]"
+						},
+						{
+							"name": "unauthorized access",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/bookstores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "WWW-Authenticate",
+									"value": "Basic realm=\"Realm\""
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 14:03:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "bookstores by name",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstores?name=Kaunas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Kaunas",
+									"description": "nurodome knygyno pavadinima, kurio ieskome\n"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstores by name returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/bookstores?name=Kaunas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Kaunas"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 16:51:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Kaunas Bookstore\",\n        \"address\": \"Laisvės al. 5, Kaunas\",\n        \"phone\": \"+37061123456\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add new bookstore",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jonavos Bookstore\",\r\n    \"address\": \"Jonavos g. 9, Jonava\",\r\n    \"phone\": \"+37061234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookstores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "new bookstore created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Jonavos Bookstore\",\r\n    \"address\": \"Jonavos g. 9, Jonava\",\r\n    \"phone\": \"+37061234567\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:25:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 21,\n    \"name\": \"Jonavos Bookstore\",\n    \"address\": \"Jonavos g. 9, Jonava\",\n    \"phone\": \"+37061234567\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add book to bookstore by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Java Concurrency in Practice\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 55.0,\r\n    \"bookstoreId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookstores/5/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"5",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "book added to bookstore",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Java Concurrency in Practice\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 55.0,\r\n    \"bookstoreId\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/5/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"5",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:50:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Vilnius Bookstore\",\n    \"address\": \"Gedimino pr. 9, Vilnius\",\n    \"phone\": \"+37061234567\",\n    \"books\": [\n        {\n            \"id\": 54,\n            \"title\": \"Java Concurrency in Practice\",\n            \"author\": \"Brian Goetz\",\n            \"isbn\": \"978-0321349606\",\n            \"price\": 55,\n            \"bookstoreId\": 5\n        }\n    ]\n}"
+						},
+						{
+							"name": "validation not passed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Java Concurrency in Practice\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 55777.0,\r\n    \"bookstoreId\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/5/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"5",
+										"books"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 14:06:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Validation error\",\n    \"status\": 400,\n    \"errors\": [\n        \"price: must not be greater than 200\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "bookstore by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstores/:bookstoreId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								":bookstoreId"
+							],
+							"variable": [
+								{
+									"key": "bookstoreId",
+									"value": "10",
+									"description": "ieskomo knygyno id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstore by id returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/bookstores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:17:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Vilnius Bookstore\",\n    \"address\": \"Gedimino pr. 9, Vilnius\",\n    \"phone\": \"+37061234567\"\n}"
+						}
+					]
+				},
+				{
+					"name": "book by bookstore id and book id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstores/5/books/54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"5",
+								"books",
+								"54"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstore by id returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/bookstores/5/books/54",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"5",
+										"books",
+										"54"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:53:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 54,\n    \"title\": \"Java Concurrency in Practice\",\n    \"author\": \"Brian Goetz\",\n    \"isbn\": \"978-0321349606\",\n    \"price\": 55,\n    \"bookstoreId\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "bookstore by id books",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstores/1/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstore by id books returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/bookstores/1/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"1",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:18:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Effective Java\",\n        \"author\": \"Joshua Bloch\",\n        \"isbn\": \"978-0134685991\",\n        \"price\": 45,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Clean Code\",\n        \"author\": \"Robert C. Martin\",\n        \"isbn\": \"978-0132350884\",\n        \"price\": 50,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Effective Java\",\n        \"author\": \"Joshua Bloch\",\n        \"isbn\": \"978-0134685991\",\n        \"price\": 45,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Clean Code\",\n        \"author\": \"Robert C. Martin\",\n        \"isbn\": \"978-0132350884\",\n        \"price\": 50,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Effective JavaNAUJAS\",\n        \"author\": \"Joshua Bloch\",\n        \"isbn\": \"978-0134685991\",\n        \"price\": 45,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 12,\n        \"title\": \"manao\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 22,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 13,\n        \"title\": \"manaomarskinko knyga\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 22,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 14,\n        \"title\": \"manaomarskinko knygawer\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": null,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 15,\n        \"title\": \"manaomarskinko knygawer\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 23,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 16,\n        \"title\": \"dar viena\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 15,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 17,\n        \"title\": \"dar viena knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 18,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 19,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 21,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 22,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 23,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 24,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 25,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 26,\n        \"title\": \"dar viena knygute2\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 27,\n        \"title\": \"dar viena knygute4\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 28,\n        \"title\": \"dar viena knygute4\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 29,\n        \"title\": \"dar viena knygute4\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 30,\n        \"title\": \"dar viena knygute4\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 31,\n        \"title\": \"dar viena knygute4\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 32,\n        \"title\": \"dar viena knygute4\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 35,\n        \"title\": \"onutes knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 36,\n        \"title\": \"onutes knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 37,\n        \"title\": \"onutes knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 38,\n        \"title\": \"onutes knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 39,\n        \"title\": \"onutes knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 40,\n        \"title\": \"onutes knygute\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 47,\n        \"title\": \"dar viena knygutegtt\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 26,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 50,\n        \"title\": \"Effective Java\",\n        \"author\": \"Joshua Bloch\",\n        \"isbn\": \"978-0134685991\",\n        \"price\": 45,\n        \"bookstoreId\": 1\n    },\n    {\n        \"id\": 51,\n        \"title\": \"Effective Java\",\n        \"author\": \"Joshua Blochbbbbbbbbbb\",\n        \"isbn\": \"978-0134685991\",\n        \"price\": 45,\n        \"bookstoreId\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update bookstore by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Vilniaus New Bookstore\",\r\n    \"address\": \"Vilniaus g. 9, Vilnius\",\r\n    \"phone\": \"+37061234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookstores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstore by id updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Vilniaus New Bookstore\",\r\n    \"address\": \"Vilniaus g. 9, Vilnius\",\r\n    \"phone\": \"+37061234567\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:29:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Vilniaus New Bookstore\",\n    \"address\": \"Vilniaus g. 9, Vilnius\",\n    \"phone\": \"+37061234567\"\n}"
+						},
+						{
+							"name": "validation not passed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Vilniaus New Bookstore\",\r\n    \"address\": \"\",\r\n    \"phone\": \"+37061234567\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 14:10:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Validation error\",\n    \"status\": 400,\n    \"errors\": [\n        \"address: cannot be empty\",\n        \"address: must be between 2 and 255 symbols long\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "patch bookstore by id title",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Naujas knygynas",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookstores/1/title",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"1",
+								"title"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstore by id title updated",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "Naujas knygynas",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/1/title",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"1",
+										"title"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:31:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Naujas knygynas\",\n    \"address\": \"Vilniaus g. 9, Vilnius\",\n    \"phone\": \"+37061234567\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete bookstore by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Naujas knygynas",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookstores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "bookstore by id deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "Naujas knygynas",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:33:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "delete book by bookstore id and book id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Naujas knygynas",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookstores/5/books/54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstores",
+								"5",
+								"books",
+								"54"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "book by bookstore by id and book id deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "Naujas knygynas",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/bookstores/5/books/54",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"bookstores",
+										"5",
+										"books",
+										"54"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:54:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "all books",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all books returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:35:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"title\": \"Java Concurrency in Practice\",\n        \"author\": \"Brian Goetz\",\n        \"isbn\": \"978-0321349606\",\n        \"price\": 55,\n        \"bookstoreId\": 2\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Spring in Action\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 40,\n        \"bookstoreId\": 2\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Java Concurrency in Practice\",\n        \"author\": \"Brian Goetz\",\n        \"isbn\": \"978-0321349606\",\n        \"price\": 55,\n        \"bookstoreId\": 2\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Spring in Action TESTAS \",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 100,\n        \"bookstoreId\": 2\n    },\n    {\n        \"id\": 11,\n        \"title\": \"TESTUKAS\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 100,\n        \"bookstoreId\": 2\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "books by title",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/books?title=Spring",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Spring"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "books by title returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/books?title=Spring",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"books"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "Spring"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 16:48:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"title\": \"Spring in Action\",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 40,\n        \"bookstoreId\": 2\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Spring in Action TESTAS \",\n        \"author\": \"Craig Walls\",\n        \"isbn\": \"978-1617294945\",\n        \"price\": 100,\n        \"bookstoreId\": 2\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "book by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/books/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "book by id returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/books/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"books",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:36:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Java Concurrency in Practice\",\n    \"author\": \"Brian Goetz\",\n    \"isbn\": \"978-0321349606\",\n    \"price\": 55,\n    \"bookstoreId\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "add new book",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Java Concurrency in Practice\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 55.0,\r\n    \"bookstoreId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "new book added",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Java Concurrency in Practice\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 55.0,\r\n    \"bookstoreId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:38:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 53,\n    \"title\": \"Java Concurrency in Practice\",\n    \"author\": \"Brian Goetz\",\n    \"isbn\": \"978-0321349606\",\n    \"price\": 55,\n    \"bookstoreId\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "update book by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Java Concurrency in Practice New book\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 60.0,\r\n    \"bookstoreId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/books/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "book by id updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Java Concurrency in Practice New book\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 60.0,\r\n    \"bookstoreId\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/books/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"books",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:40:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Java Concurrency in Practice New book\",\n    \"author\": \"Brian Goetz\",\n    \"isbn\": \"978-0321349606\",\n    \"price\": 60,\n    \"bookstoreId\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "delete book by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Java Concurrency in Practice New book\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 60.0,\r\n    \"bookstoreId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/books/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "book by id deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Java Concurrency in Practice New book\",\r\n    \"author\": \"Brian Goetz\",\r\n    \"isbn\": \"978-0321349606\",\r\n    \"price\": 60.0,\r\n    \"bookstoreId\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/books/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"books",
+										"3"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:40:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sale",
+			"item": [
+				{
+					"name": "all sales",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/sales",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all sales returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:42:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 1,\n        \"saleDate\": \"2023-06-04\"\n    },\n    {\n        \"id\": 8,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 9,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 10,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"2011-01-01\"\n    },\n    {\n        \"id\": 11,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 12,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 13,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 14,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 15,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 16,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 17,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 18,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"2024-06-16\"\n    },\n    {\n        \"id\": 19,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 20,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"1970-01-01\"\n    },\n    {\n        \"id\": 21,\n        \"bookId\": 4,\n        \"bookstoreId\": 2,\n        \"quantity\": 10,\n        \"saleDate\": \"2024-01-01\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "sale by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/sales/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sale by id returned",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:42:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"bookId\": 4,\n    \"bookstoreId\": 2,\n    \"quantity\": 1,\n    \"saleDate\": \"2023-06-04\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update sale by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"bookId\": 7,\r\n    \"bookstoreId\": 5,\r\n    \"quantity\": 100,\r\n    \"saleDate\": \"2023-06-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sale by id updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"bookId\": 7,\r\n    \"bookstoreId\": 5,\r\n    \"quantity\": 100,\r\n    \"saleDate\": \"2023-06-04\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/sales/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:44:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"bookId\": 7,\n    \"bookstoreId\": 5,\n    \"quantity\": 100,\n    \"saleDate\": \"2023-06-04\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete sale by id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"bookId\": 7,\r\n    \"bookstoreId\": 5,\r\n    \"quantity\": 100,\r\n    \"saleDate\": \"2023-06-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sale by id deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"bookId\": 7,\r\n    \"bookstoreId\": 5,\r\n    \"quantity\": 100,\r\n    \"saleDate\": \"2023-06-04\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/sales/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										"4"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jun 2024 13:45:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
