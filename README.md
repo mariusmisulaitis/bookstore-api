@@ -127,7 +127,7 @@ This system will allow managers to perform various analyses, such as which books
 
 ## Example Request
 
-### Add a new Book
+### Add a new Book to a specific Bookstore
 
 ```bash
 curl -X POST "http://localhost:8080/books" -H "Content-Type: application/json" -d '{
