@@ -56,7 +56,8 @@ This system will allow managers to perform various analyses, such as which books
 
 4. **Access the API documentation**
 
-    The application will be running at `http://localhost:8080`. You can access the API documentation (e.g., Swagger) at `http://localhost:8080/swagger-ui/index.html#/`.
+    The application will be running at (http://localhost:8080).
+    You can access the API documentation (e.g., Swagger) at (http://localhost:8080/swagger-ui/index.html#/)
 
 
 
@@ -143,6 +144,38 @@ curl -X POST "http://localhost:8080/books" -H "Content-Type: application/json" -
 
 The application handles errors gracefully and returns appropriate HTTP status codes and error messages for various error scenarios, including validation errors and not found errors.
 
+### Request
+
+```bash
+curl -X 'POST' \
+  'http://localhost:8080/books' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "New Book",
+  "author": "",
+  "isbn": "",
+  "price": 2000,
+  "bookstoreId": 500
+}'
+```
+
+### Response
+
+```bash
+{
+  "message": "Validation error",
+  "status": 400,
+  "errors": [
+    "isbn: cannot be empty",
+    "price: must not be greater than 200",
+    "isbn: must be between 10 and 20 symbols long",
+    "author: must be between 2 and 255 symbols long",
+    "author: cannot be empty"
+  ]
+}
+
+```
 
 ## Contact
 If you have any questions or suggestions, feel free to reach out to me at [marius.misulaitis7@gmail.com].
