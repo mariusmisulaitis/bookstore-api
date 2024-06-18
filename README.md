@@ -68,7 +68,7 @@ This system will allow managers to perform various analyses, such as which books
 
 - `GET /books` - Get all books
 - `GET /books/{bookId}` - Get a book by ID
-- `POST /books` - Add a new book
+- `POST /books` - Add a new book to a specific bookstore
 - `PUT /books/{bookId}` - Update a book's details
 - `DELETE /books/{bookId}` - Delete a book by ID
 
